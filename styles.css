@@ -1,0 +1,115 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arsenal";
+  margin: auto;
+  background-color: lightgray;
+  font-size: 1.3rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: darkgray;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  display: flex;
+  background-color: midnightblue;
+  color: whitesmoke;
+  border-radius: 8px;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  transition: 0.1s;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li:hover {
+  border: 1px solid;
+}
+
+li:active {
+  background-color: black;
+}
+
+#main-img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#main-img img {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#main-img p {
+  font-style: italic;
+  color: rgb(73, 72, 72);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  box-sizing: border-box;
+  width: 80vw;
+  margin: auto;
+  line-height: 1.2em;
+  letter-spacing: 0.005em;
+}
+
+section:not(#img-section) {
+  border-radius: 20px;
+  box-shadow: 3px 5px 2px gray;
+  border: 1px solid gray;
+  padding: 50px 100px;
+  margin-bottom: 50px;
+}
+
+section h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+section p:not(.description):first-of-type::first-letter {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 2px;
+  font-family: Georgia, serif;
+}
+
+#habilidades .habilidade::first-letter {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 2px;
+  font-family: Georgia, serif;
+}
+
+footer {
+  color: gray;
+  font-style: italic;
+}
