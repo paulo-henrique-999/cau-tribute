@@ -112,4 +112,5 @@ section p:not(.description):first-of-type::first-letter {
 footer {
   color: gray;
   font-style: italic;
+  text-align: center;
 }
