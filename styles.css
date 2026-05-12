@@ -15,6 +15,8 @@ header {
   align-items: center;
   padding: 30px;
   background-color: darkgray;
+  position: sticky;
+  top: 0;
 }
 
 h1 {
@@ -24,6 +26,7 @@ h1 {
 ul {
   display: flex;
   gap: 20px;
+  padding-left: 0;
 }
 
 li {
