@@ -1,122 +1,98 @@
-html {
-  scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #222;
 }
 
 body {
-  font-family: "Arsenal";
-  margin: auto;
-  background-color: lightgray;
-  font-size: 1.3rem;
   width: 100%;
-  overflow-x: hidden;
+  text-align: center;
+  font-family: Georgia, serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  background-color: darkgray;
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
-
-h1 {
-  font-size: 2rem;
+  justify-content: center;
+  gap: 10px;
+  height: 15vh;
 }
 
 ul {
   display: flex;
-  gap: 20px;
-  padding-left: 0;;
+  gap: 10px;
+  justify-content: center;
 }
 
-li {
-  display: flex;
-  background-color: midnightblue;
-  color: whitesmoke;
-  border-radius: 8px;
-  padding: 4px 8px;
-  border: 1px solid transparent;
-  transition: 0.1s;
+ul > li {
+  list-style: none;
 }
 
 li > a {
-  color: inherit;
   text-decoration: none;
 }
 
-li:hover {
-  border: 1px solid;
-}
-
-li:active {
-  background-color: black;
-}
-
-#main-img {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-#main-img img {
-  display: block;
-  margin: auto;
-  border-radius: 10px;
-}
-
-#main-img p {
-  font-style: italic;
-  color: rgb(73, 72, 72);
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 section {
-  box-sizing: border-box;
-  width: 80vw;
-  margin: auto;
-  line-height: 1.2em;
-  letter-spacing: 0.005em;
+  margin: 0% 5% 10% 5%;
 }
 
-section:not(#img-section) {
-  border-radius: 20px;
-  box-shadow: 3px 5px 2px gray;
-  border: 1px solid gray;
-  padding: 50px 100px;
-  margin-bottom: 50px;
+#img-section img {
+  border-radius: 10px;
+  width: 70%;
+}
+
+#img-section p {
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
 
 section h2 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 4%;
 }
 
-section p:not(.description):first-of-type::first-letter {
-  font-weight: bold;
-  font-size: 2rem;
-  margin-right: 2px;
-  font-family: Georgia, serif;
-}
-
-#habilidades .habilidade::first-letter {
-  font-weight: bold;
-  font-size: 2rem;
-  margin-right: 2px;
-  font-family: Georgia, serif;
+section p:not(.description) {
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 footer {
-  color: gray;
   font-style: italic;
-  text-align: center;
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  #main-img img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #main-img img {
+    width: 20%;
+  }
+  section {
+    margin: 5%;
+  }
+  section h2 {
+    margin-bottom: 3%;
+  }
+  section p {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #222;
+    --text-color: #fff;
+  }
 }
